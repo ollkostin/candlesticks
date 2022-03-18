@@ -1,0 +1,15 @@
+java:
+  image: openjdk:11
+  volumes:
+    - ./:/app
+  command: bash -c "cd /app && java -jar partner-service-1.0.1-all.jar --port=8032"
+  ports:
+    - 8032:8032
+
+#candlestick:
+#  image: candlestick:latest
+#  volumes:
+#    - ./build/libs/:/app
+#  command: bash -c "cd /app && java -jar candlesticks-1.1.1.jar --port=9000"
+#  ports:
+#    - 9000:9000
