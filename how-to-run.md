@@ -1,0 +1,1 @@
+To build application execute `build-jar.sh`
